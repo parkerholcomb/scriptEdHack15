@@ -1,0 +1,194 @@
+
+
+#sidebar{
+    height:800px;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    border: 1px solid black;
+}
+
+#tank{
+    background-color: gray;
+    height:50%;
+}
+
+#inventory{
+    background-color: blue;
+    height: 50%;
+}
+
+.part {
+    height:33%;  
+    border: 1px solid black;
+}
+
+.completed {
+    background-color: green;
+}
+
+
+
+#visor{
+    position: absolute;
+    left: 300px;
+    height: 800px;
+    
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 80%;
+    
+}
+
+.viewfinder{
+    width: 1000px;
+    margin-left: 165px;
+    margin-top: 50px;
+    position: absolute;
+}
+}
+
+
+.bounce {
+    animation: bounce 3s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-30px);}
+}
+
+.hidden-object {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /*border: 3px solid gray;*/
+    display: none;
+    
+    z-index:10;
+    
+}
+
+.hidden-object:hover {
+    border: 5px solid red;
+    display: block;
+}
+
+#hidden-wrench{
+    
+    left: 800px;
+    top: 400px;   
+    background-image: url("http://fla.fg-a.com/aliens/alien-robot-1b.gif");
+    
+    
+}
+
+#hidden-fuel{
+    
+    left: 900px;
+    top: 50px;
+    background-image: url("http://fla.fg-a.com/aliens/alien-robot-1b.gif");
+    
+}
+
+#hidden-rocket{
+    left: 300px;
+    top: 200px;
+    background-image: url("http://fla.fg-a.com/aliens/alien-robot-1b.gif");
+}
+
+
+.death {
+    /*background-color:black;*/
+    /*transition: background-color 3s;*/
+    background-image: url("http://devilishdesign.net/images/postitems/2013/03/you-are-dead2.jpg");
+    /*background-size: cover;*/
+    /*background-repeat:no-repeat;*/
+    transition: background-image 3s ;
+}
+
+
+.earth {
+    
+    background-image: url("http://imagesci.com/img/2013/12/planet-earth-from-the-moon-2436-hd-wallpapers.jpg");
+}
+
+.rover{
+    background-image: url("http://www.moontruth.org/truth/LunarBuggyEarth.jpg");
+}
+
+.desert{
+    background-image: url("http://3dprint.com/wp-content/uploads/2014/04/mars-feat.jpg"); 
+}
+
+.desert #hidden-wrench{
+    display: block;
+}
+
+.desert  #hidden-fuel{
+    display: none;
+}
+.desert  #hidden-rocket{
+    display: none;
+}
+
+
+.earth #hidden-wrench{
+    display: none;
+}
+
+.earth  #hidden-fuel{
+    display: block;
+}
+.earth  #hidden-rocket{
+    display: none;
+}
+
+
+.rover #hidden-wrench{
+    display: none;
+}
+
+.rover  #hidden-fuel{
+    display: none;
+}
+.rover  #hidden-rocket{
+    display: block;
+}
+
+
+.nav {
+    width: 20%;
+    height: 800px;
+    /*border: 1px solid black;*/
+}
+
+#left {
+  float: left;
+}
+
+
+#right {
+   float: right;
+}
+
+.arrow {
+    position: relative;
+    height: 100px;
+    margin-top: 300px;
+}
+
+.disabled {
+    display: none;
+}
+
+.blastoff {
+    background-image: url("https://lisagawlas.files.wordpress.com/2013/02/blast-off.jpg"); 
+    background-size: cover;
+    background-repeat:no-repeat;
+    z-index: 10000;
+}
+
+
